@@ -1,5 +1,7 @@
 # voice_whisper
 
+English README is available in `README.en.md`.
+
 ローカルで `.m4a` を文字起こしするシンプルな Python ツールです。Apple Silicon (M1/M2/M3/M4) で高速に動作するよう、`faster-whisper` + CTranslate2 を利用します。
 
 ## セットアップ
