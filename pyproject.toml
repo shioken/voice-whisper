@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-whisper"
+version = "0.1.0"
+description = "Local .m4a transcription CLI powered by faster-whisper/CTranslate2."
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+keywords = ["whisper", "transcription", "speech-to-text", "faster-whisper", "ctranslate2"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Environment :: Console",
+  "Operating System :: MacOS :: MacOS X",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Topic :: Text Processing :: Linguistic",
+  "License :: Other/Proprietary License",
+]
+dependencies = [
+  "faster-whisper>=1.0.0",
+  "rich>=13.7.0",
+  "click>=8.1.7",
+  "tqdm>=4.66.0",
+]
+
+[project.scripts]
+voice-whisper = "transcribe:main"
+
+[tool.setuptools]
+py-modules = ["transcribe"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "black>=24.0",
+  "ruff>=0.4",
+  "isort>=5.13",
+]

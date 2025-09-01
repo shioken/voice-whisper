@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+
+# Generated transcripts
+transcripts/
+
+voice/
+m4a/
+
+# Docs not to track
+AGENTS.md
+
+# Local environment files
+.env
+.env.*
+
+# macOS
+.DS_Store
